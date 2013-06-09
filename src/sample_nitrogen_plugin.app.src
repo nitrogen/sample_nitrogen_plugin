@@ -1,0 +1,12 @@
+%% vim ts=2 sw=2 et ft=erlang
+{application, sample_nitrogen_plugin,
+ [
+  {description, "A sample plugin for the Nitrogen Web Framework"},
+  {vsn, git},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.

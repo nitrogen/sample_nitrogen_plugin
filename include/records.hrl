@@ -1,0 +1,1 @@
+-record(sample_nitrogen_plugin, {?ELEMENT_BASE(element_sample_nitrogen_plugin), field1, field2 }).
