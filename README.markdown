@@ -44,19 +44,20 @@ The basic tree structure of a Nitrogen plugin is as follows:
 
 ```
 .
-├── ebin/
-├── include/
+├── ebin
+├── include
 │   └── records.hrl
 ├── nitrogen.plugin
-├── src/
-│   ├── element_sample_nitrogen_plugin.erl
-│   └── sample_nitrogen_plugin.app.src
-└── static/
-    ├── css/
-    │   └── style.css
-    ├── images/
-    └── js/
-        └── plugin.js
+├── priv
+│   └── static
+│       ├── css
+│       │   └── style.css
+│       ├── images
+│       └── js
+│           └── plugin.js
+└── src
+    ├── element_sample_nitrogen_plugin.erl
+    └── sample_nitrogen_plugin.app.src
 ```
 
 ### ebin/
@@ -115,7 +116,7 @@ render_element(_Rec = #sample_nitrogen_plugin{}) ->
     file found in the *plugin's* directory, not the general `records.hrl` file
 in your application's directory.
 
-### static/
+### priv/static/
 
 This will be the location of static resources: images, javascript files,
 stylesheets, or anything else for that matter.
